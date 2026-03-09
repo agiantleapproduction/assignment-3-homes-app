@@ -1,0 +1,8 @@
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px)); /* repeat(auto-fill, ....) - creates as many columns as will fit in the available space */
+    margin-top: 50px;
+    justify-content: space-around; /* evens out leftover cards that don't fill the row */
+}
