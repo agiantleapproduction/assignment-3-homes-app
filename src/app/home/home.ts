@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HousingLocation } from '../housing-location/housing-location';
+import {HousingLocationInfo} from '../housinglocationinfo.js';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,16 @@ import { HousingLocation } from '../housing-location/housing-location';
   styleUrl: './home.css',
 })
 export class Home {
+  readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
+    housingLocation: HousingLocationInfo = {
+      id: 9999,
+      name: 'Test Home',
+      city: 'Test City',
+      state: 'ST',
+      phot: '${this.baseUrl}/example-house.jpg',
+      availableUnits: 99,
+      wifi: true,
+      laundry: false,
+    };
 
 }
