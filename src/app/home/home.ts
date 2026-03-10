@@ -15,7 +15,7 @@ export class Home {
       name: 'Test Home',
       city: 'Test City',
       state: 'ST',
-      phot: '${this.baseUrl}/example-house.jpg',
+      photo: `${this.baseUrl}/example-house.jpg`,
       availableUnits: 99,
       wifi: true,
       laundry: false,
